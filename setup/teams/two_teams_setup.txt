@@ -1,0 +1,7 @@
+#Two team setup
+team add team1
+team add team2
+team modify team1 friendlyFire false
+team modify team2 friendlyFire false
+team modify team1 color blue
+team modify team2 color red
