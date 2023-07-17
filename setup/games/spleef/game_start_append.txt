@@ -7,3 +7,6 @@ gamerule doTileDrops false
 scoreboard objectives add broken_snow minecraft.mined:minecraft.snow_block
 scoreboard objectives add Y dummy
 scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick
+
+scoreboard players reset @a broken_snow
+scoreboard players reset @a right_click
