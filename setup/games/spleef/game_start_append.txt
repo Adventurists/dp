@@ -2,12 +2,3 @@
 ### Game type spleef
 give @a[tag=ingame] diamond_shovel{CanDestroy:["minecraft:snow","minecraft:snow_block","minecraft:powder_snow"],display:{Name:'{"text":"Shovel","color":"white","italic":false}'},HideFlags:255,Unbreakable:1b,CustomModelData:1} 1
 spreadplayers GAME_SPAWNPOINT_HERE MIN_RANGE MAX_RANGE false @a[tag=ingame]
-
-gamerule doTileDrops false
-scoreboard objectives add broken_snow minecraft.mined:minecraft.snow_block
-scoreboard objectives add Y dummy
-scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add movement_guns dummy
-
-scoreboard players reset @a broken_snow
-scoreboard players reset @a right_click
