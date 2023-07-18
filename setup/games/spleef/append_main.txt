@@ -4,3 +4,4 @@ execute as @a[tag=ingame] store result score @s Y run data get entity @s Pos[1]
 execute as @a[tag=ingame] at @s if score @s Y matches ..YVALUE_HERE run function FOLDER_NAME:game/end_game/becomes_spectator
 
 execute as @a[tag=spectator,gamemode=spectator] at @s if entity @p[tag=ingame,distance=80..] run tp @s @p[tag=ingame]
+execute as @a[tag=ingame,tag=!spectator,tag=!lobby] at @s if score @s right_click matches 1.. run function FOLDER_NAME:game/weapons/determine_weapon
